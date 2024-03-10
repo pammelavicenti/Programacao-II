@@ -1,4 +1,6 @@
-#Regressiva
+#Regressiva: Faca uma funcao que crie e retorne uma lista com todos os numeros
+pares de 1 a 100, porem na ordem regressiva.
+    
 def pares():
     i = 100
     l = []
