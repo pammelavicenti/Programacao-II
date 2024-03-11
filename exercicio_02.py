@@ -10,3 +10,4 @@ def metade():
     for n in l:
         print(n)
 metade()
+#testando 
