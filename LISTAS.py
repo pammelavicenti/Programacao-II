@@ -72,6 +72,17 @@ def main():
         return maior 
     
 
+    #6-POSICAO DO MAXIMO
+    '''Dada uma lista de numeros, faça uma função que encontre e retorne o índice do maior deles'''
+    def posMaior(l):
+        p = 0
+
+        for i in range(len(l)):
+            if l[i] > l[p]:
+                p = i
+        return p 
+    
+
     print("Números pares de 1 a 100 em ordem regressiva:", pares())
     print("Números pares de 1 a 100 em ordem regressiva:", pares2())
     
@@ -86,6 +97,8 @@ def main():
     l = [10, 9, 20, 45, 0]
     print("Maior numero da lista: ", maior(l))
     
+    l = [1, 2, 3, 4, 3, 2, 1, 2, 3, 4, 4, 3, 3, 3, 2, 1]
+    print("Posição do maior numero:", posMaior(l))
     
 main()
 
