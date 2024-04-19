@@ -63,6 +63,15 @@ def main():
     #5-MAXIMO 
     #Dada uma lista de numeros, faça uma função que encontre e retorne o maior deles.
     # Chamando as funções
+    def maior(l):
+        maior = l[0]
+
+        for elem in l:
+            if elem > maior:
+                maior = elem
+        return maior 
+    
+
     print("Números pares de 1 a 100 em ordem regressiva:", pares())
     print("Números pares de 1 a 100 em ordem regressiva:", pares2())
     
@@ -73,6 +82,10 @@ def main():
     
     l = [1, 2, 3, 4, 3, 2, 1, 2, 3, 4, 4, 3, 3, 3, 2, 1]
     print("Número de ocorrências de '3' na lista:", ocorrencias(3, l))
+
+    l = [10, 9, 20, 45, 0]
+    print("Maior numero da lista: ", maior(l))
+    
     
 main()
 
